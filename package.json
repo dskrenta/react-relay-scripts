@@ -57,13 +57,13 @@
     "webpack": "2.4.1",
     "webpack-dev-server": "2.4.4",
     "webpack-manifest-plugin": "1.1.0",
-    "whatwg-fetch": "2.0.3"
+    "whatwg-fetch": "2.0.3",
+    "relay-compiler-webpack-plugin": "^0.1.0",
+    "babel-plugin-relay": "dev"
   },
   "devDependencies": {
-    "babel-plugin-relay": "dev",
     "react": "^15.3.0",
-    "react-dom": "^15.3.0",
-    "relay-compiler-webpack-plugin": "^0.1.0"
+    "react-dom": "^15.3.0"
   },
   "optionalDependencies": {
     "fsevents": "1.0.17"

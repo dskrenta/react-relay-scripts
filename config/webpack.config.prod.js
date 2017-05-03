@@ -283,7 +283,7 @@ module.exports = {
     }),
     // Webpack relay compiler plugin
     new RelayCompilerWebpackPlugin({
-      schema: `${paths.appSrc}/server/schema.graphql`,
+      schema: paths.graphqlSchema,
       src: paths.appSrc,
     })
   ],

@@ -1,0 +1,15 @@
+type TodoItem {
+  id: ID!
+  content: String!
+  created: String!
+}
+
+type Mutation {
+  addTodoItem(content: String!): TodoItem!
+  updateTodoItem(id: ID!, content: String!): TodoItem!
+  removeTodoItem(id: ID!): ID!
+}
+
+type Query {
+  getTodoItems: [TodoItem]!
+}

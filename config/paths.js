@@ -85,6 +85,7 @@ module.exports = {
   appNodeModules: resolveApp('node_modules'),
   nodePaths: nodePaths,
   publicUrl: getPublicUrl(resolveApp('package.json')),
+  graphqlSchema: resolveApp('server/graphql.schema'),
   servedPath: getServedPath(resolveApp('package.json')),
 };
 
@@ -108,6 +109,7 @@ module.exports = {
   nodePaths: nodePaths,
   publicUrl: getPublicUrl(resolveApp('package.json')),
   servedPath: getServedPath(resolveApp('package.json')),
+  graphqlSchema: resolveApp('server/graphql.schema'),
   // These properties only exist before ejecting:
   ownPath: resolveOwn('.'),
   ownNodeModules: resolveOwn('node_modules'), // This is empty on npm 3

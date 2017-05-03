@@ -250,7 +250,7 @@ module.exports = {
     new WatchMissingNodeModulesPlugin(paths.appNodeModules),
     // Webpack relay compiler plugin
     new RelayCompilerWebpackPlugin({
-      schema: path.resolve(__dirname, './relative/path/to/schema.graphql'),
+      schema: paths.graphqlSchema,
       src: paths.appSrc,
     })
   ],
