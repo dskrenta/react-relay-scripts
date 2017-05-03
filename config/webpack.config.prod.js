@@ -175,7 +175,7 @@ module.exports = {
         // @remove-on-eject-begin
         options: {
           babelrc: false,
-          presets: [require.resolve('babel-preset-react-app')],
+          presets: [require.resolve('babel-preset-react-app'), require.resolve('babel-plugin-relay')],
         },
         // @remove-on-eject-end
       },
@@ -281,6 +281,11 @@ module.exports = {
     new ManifestPlugin({
       fileName: 'asset-manifest.json',
     }),
+    // Webpack relay compiler plugin
+    new RelayCompilerWebpackPlugin({
+      schema: `${paths.appSrc}/server/schema.graphql`,
+      src: paths.appSrc,
+    })
   ],
   // Some libraries import Node modules but don't use them in the browser.
   // Tell Webpack to provide empty mocks for them so importing them works.

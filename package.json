@@ -60,8 +60,10 @@
     "whatwg-fetch": "2.0.3"
   },
   "devDependencies": {
+    "babel-plugin-relay": "dev",
     "react": "^15.3.0",
-    "react-dom": "^15.3.0"
+    "react-dom": "^15.3.0",
+    "relay-compiler-webpack-plugin": "^0.1.0"
   },
   "optionalDependencies": {
     "fsevents": "1.0.17"
